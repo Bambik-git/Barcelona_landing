@@ -474,6 +474,14 @@ h2 {
   column-gap: 5px;
   position: relative;
 }
+.review-card__images picture:nth-last-child(2) {
+  filter: brightness(60%);
+  position: relative;
+}
+.review-card__images picture:nth-last-child(2):hover + .review-card__image-counter {
+  transform: translate(-50%, -50%) scale(1.3);
+  font-size: 20px;
+}
 .review-card__image-counter {
   position: absolute;
   top: 50%;

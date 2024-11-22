@@ -1,0 +1,35 @@
+.radio {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  transition-duration: var(--transition-duration);
+
+
+  &__input {
+    width: 20px;
+    &:not(:checked) + .radio__emulator::after{
+      opacity: 0;
+    }
+
+  }
+
+  &__emulator {
+    @include flex-center;
+    @include square(4px);
+
+    position: relative;
+    background-color: #212121;
+    border: var(--border);
+    border-radius: 50%;
+
+    &::after {
+      @include square(8px);
+      @include abs-center;
+
+      content: '';
+      background-color: var(--color-red);
+      border-radius: 50%;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  @include flex-center(true);
+
+  padding-inline: 25px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  border: 3px solid var(--color-red);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--color-light-gray);
+  }
+}

@@ -1,0 +1,32 @@
+.message {
+  display: flex;
+  align-items: start;
+  column-gap: 20px;
+  padding: 5px 0 5px 15px;
+
+  &__avatar {
+    @include square(44px);
+    border-radius: 50px;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__text {
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1.67;
+  }
+
+  &__time {
+    color: #9D9D9D;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
+  }
+
+}

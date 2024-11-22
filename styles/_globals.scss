@@ -1,0 +1,52 @@
+body {
+  font-size: 15px;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.67;
+  color: var(--color-dark);
+  background-color: var(--color-light-bg);
+  margin-block: 110px;
+
+}
+
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  margin-bottom: 20px;
+  background-color: var(--color-light);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.text-orange {
+  color: #FC4F1E;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 29px;
+}

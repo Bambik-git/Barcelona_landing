@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-right: 40px;
+    align-items: start;
+  }
+
+  &__description, &__read-more-link {
+    font-size: 17px;
+  }
+
+  &__read-more-link {
+    border-bottom: 3px solid var(--color-red);
+
+    &:hover{
+      color: var(--color-light-gray);
+    }
+  }
+
+}

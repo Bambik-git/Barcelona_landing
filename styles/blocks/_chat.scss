@@ -1,0 +1,87 @@
+.chat {
+  --ChatPaddingLeft: 25px;
+  --ChatPaddingRight:15px;
+  --ChatPaddingBlock:30px;
+
+  min-width: 415px;
+  width: 100%;
+  background-color: var(--color-light);
+
+
+  &__header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    padding-block: var(--ChatPaddingBlock);
+    padding-left: var(--ChatPaddingLeft);
+    padding-right: var(--ChatPaddingRight);
+  }
+
+  &__avatar {
+    @include square(44px);
+    border-radius: 50%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__username {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__whois {
+    color: var(--color-red);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &__rating {
+    margin-left: auto;
+  }
+
+  &__body {
+    border-block: 1px solid #ECECEC;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-color: var(--color-red);
+    padding-inline: 10px;
+  }
+
+  &__send-form {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: var(--ChatPaddingBlock);
+    padding-left: var(--ChatPaddingLeft);
+    padding-right: var(--ChatPaddingRight);
+  }
+
+  &__input {
+    min-width: 270px;
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid  #ECECEC;
+
+    &:focus-visible {
+      outline:1px solid var(--color-light-gray);
+    }
+
+  }
+  &__send-button {
+    @include reset-button;
+    cursor: pointer;
+
+    & svg:hover {
+      stroke: var(--color-light-gray);
+    }
+  }
+}
